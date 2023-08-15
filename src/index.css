@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "dup-sans-500";
+  src: url("./assets/fonts/DuplicateSans-Medium.ttf");
+}
+
+html,
+body {
+  font-family: "dup-sans-500";
+}

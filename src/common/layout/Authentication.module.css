@@ -1,0 +1,6 @@
+.overlapImage {
+  background-image: url(../../assets//images/Background-drop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3rem;
+}
