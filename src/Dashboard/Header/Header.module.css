@@ -1,0 +1,56 @@
+/* ========== STYLES FOR THE HEADER COMPONENT */
+.asideHeader {
+  background-color: #fbfbfb;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+.asideHeadText {
+  color: #020061;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.asideForm {
+  padding: 10px;
+  border: none;
+  outline: none;
+  width: 600px;
+  border-radius: 20px;
+  background-color: #f5f5f5;
+  display: inline-block;
+}
+
+.asideForm::placeholder {
+  padding: 5px;
+  color: #808080;
+  font-size: 15px;
+}
+
+.asideGuest {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.asideG {
+  background-color: #020061;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 8px 18px;
+  border-radius: 300px;
+  display: inline-block;
+}
+
+.asideGText {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+/* ========== STYLES FOR THE HEADER COMPONENT */

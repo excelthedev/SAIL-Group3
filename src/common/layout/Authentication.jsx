@@ -22,8 +22,8 @@ const AuthLayout = () => {
       </div>
 
       {/* Source talent view */}
-      <div className="px-[7.5rem] pt-[4rem] w-full">
-        <Outlet />
+      <div className="px-[7.5rem] pt-[4rem] w-full sm:px-[2rem]">
+        <Outlet  />
       </div>
     </div>
   );
