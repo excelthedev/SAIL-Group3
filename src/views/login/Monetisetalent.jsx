@@ -1,17 +1,18 @@
-import React, { useState } from "react";
+import { React, useState } from "react";
 import { Link } from "react-router-dom";
+import leftArrow from "../../assets/icons/arrow-left.svg";
 import useGetInputValue from "../../custom-hooks/useGetInputValue";
 import useCustomApi from "../../custom-hooks/useCustomApi";
 import { apiEndpoints } from "../../api/endpoint";
 
-const Login = () => {
+const Monetisetalent = () => {
   const [inputValue, setInputValue] = useState({
     email: "",
     password: "",
   });
   const { setRequest } = useGetInputValue(setInputValue);
   const { data, error, loading, postApi } = useCustomApi(
-    apiEndpoints.auth.register,
+    apiEndpoints.auth.login,
     inputValue
   );
 
@@ -22,15 +23,21 @@ const Login = () => {
 
   return (
     <>
-      <div className="flex flex-col leading-[1.1] ">
-        <p className="text-[4rem] text-[#020061] font-bold  inline-block mb-4">
-          Welcome, Please log in
+      <div className="grid grid-cols-2 items-center mb-4">
+        <img
+          src={leftArrow}
+          alt=""
+          className="bg-[#020061] rounded-full p-3 cursor-pointer"
+          onClick={() => window.history.back()}
+        />
+        <p className="text-[2rem] text-[#020061] font-bold  inline-block">
+          Welcome, Please Log in
         </p>
       </div>
 
       <form onSubmit={onSubmit}>
         <div className="grid pb-4">
-          <p className="text-[20px] pl-1 mb-2">Email</p>
+          <p className="text-[20px] pl-1 mb-2">Email Address</p>
           <input
             type="email"
             placeholder="Email Address"
@@ -51,27 +58,36 @@ const Login = () => {
           />
         </div>
 
-        <p className="text-[#020061] cursor-pointer inline">
+        {/* <p className="text-[#020061] cursor-pointer inline">
           Forgot passwordd?
-        </p>
+        </p> */}
 
         <button
           type="submit"
-          className=" bg-[#020061] text-[#89D92B] font-medium grid w-full p-5 rounded-full mt-10 shadow-[3px_4px_1px_#89D92B]"
+          className=" bg-[#020061] text-[#89D92B] font-medium grid w-full p-5 rounded-full mt-8 shadow-[3px_4px_1px_#89D92B]"
         >
-          {loading ? "Please wait" : "Log In"}
+          Log in
         </button>
       </form>
 
-      <div className="grid mt-6">
-        <Link to="/monitize-talent" className="grid">
-          <button className="border-[#020061] text-[#020061] border-[3px] font-medium p-5 rounded-full border-b-4">
-            Sign Up Here
-          </button>
-        </Link>
-      </div>
+      {/* <div className="flex items-center justify-between" v>
+        <div
+          onClick={() => {
+            firstPage ? window.history.back() : setFirstPage(true);
+          }}
+          className="bg-[#020061] rounded-full p-3"
+        >
+          <img src={leftArrow} alt="leftarrow" className="cursor-pointer" />
+        </div>
+        <div className="flex">
+          <span className="bg-[#020061] p-2 rounded-full mr-3 "></span>
+          <span className="bg-[#E5E5E5] p-2 rounded-full"></span>
+        </div>
+      </div> */}
+
+      {/* monetise talent */}
     </>
   );
 };
 
-export default Login;
+export default Monetisetalent;

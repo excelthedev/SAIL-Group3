@@ -58,15 +58,15 @@ const Landingpage = () => {
       {/* button */}
 
       <div className="grid">
-        <Link to="/login-page" className="grid">
-          <button className="bg-[#020061] text-[#89D92B] font-medium p-5 rounded-full shadow-[3px_4px_1px_#89D92B] mb-4 sm:mb-8">
-            Hire a Talent
+        <Link to="/signup-page" className="grid">
+          <button className="border-[#020061] text-[#020061] border-[3px] font-medium p-5 rounded-full border-b-4 mb-4">
+            Monetize your Talent
           </button>
         </Link>
 
-        <Link to="/monitize-talent" className="grid">
-          <button className="border-[#020061] text-[#020061] border-[3px] font-medium p-5 rounded-full border-b-4 mb-4">
-            Monetize your Talent
+        <Link to="/login-page" className="grid">
+          <button className="bg-[#020061] text-[#89D92B] font-medium p-5 rounded-full shadow-[3px_4px_1px_#89D92B] mb-4 sm:mb-8">
+            Hire a Talent
           </button>
         </Link>
       </div>

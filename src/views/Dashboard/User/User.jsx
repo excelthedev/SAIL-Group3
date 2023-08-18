@@ -1,8 +1,8 @@
 import React from "react";
-import classes from "./Person.module.css";
+import classes from "./User.module.css";
 import { FaComputer, FaLocationDot, FaStar, FaToolbox } from "react-icons/fa6";
 import personImg from "../../../assets/images/person.jpg";
-import Persondata from "./Persondata";
+import Persondata from "./Dummdata";
 
 const Person = () => {
   return (

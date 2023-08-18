@@ -40,7 +40,7 @@ const Persondata = [
   {
     name: "Oguns Sharaf",
     status: "Available",
-    occupation: "Unkown",
+    occupation: "React Developer",
     location: "Lagos, Nigeria",
     talent: "View Talent",
     rating: 1.2,
@@ -94,7 +94,7 @@ const Persondata = [
   {
     name: "Sharon Long",
     status: "Available",
-    occupation: "Stem instructor",
+    occupation: "React Developer",
     location: "Lagos, Nigeria",
     talent: "View Talent",
     rating: 3.3,

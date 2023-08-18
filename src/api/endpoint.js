@@ -1,5 +1,6 @@
 export const apiEndpoints = {
   auth: {
-    register: "auth/register",
+    register: "register",
+    login: "login",
   },
 };
