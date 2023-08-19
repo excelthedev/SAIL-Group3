@@ -1,34 +1,143 @@
+import {HiOutlineBriefcase} from "react-icons/hi"
+import {GrLocation} from "react-icons/gr"
+import {BsStarFill} from "react-icons/bs"
+
 const Test = () => {
   return (
-    <div className="grid grid-cols-2 px-6 py-8">
-      <div className="bg-red-400">
-        <div className="bg-yellow-500">
-          <p className="p-6 rounded-2xl bg-gray-500">G</p>
-          <p className="">User full Name</p>
+    <>
+      <div className=" flex flex-row justify-between items-start p-10">
+        <div className=" flex flex-col gap-10 ">
+          <div class="w-96 h-12 justify-start items-center gap-2 inline-flex">
+            <div class="w-12 h-12 relative">
+              <div class="w-12 h-12 left-0 top-0 absolute bg-blue-950 rounded-full"></div>
+              <div class="left-[16px] top-[15px] absolute text-white text-xl font-medium leading-none">
+                G
+              </div>
+            </div>
+            <div class="text-black text-base font-medium leading-none">
+              Ogunmepon Sharafa
+            </div>
+          </div>
+
+          <div className=" flex justify-start items-center gap-10">
+            <div class="text-zinc-600 text-sm font-normal leading-none  inline-flex gap-2">
+              < HiOutlineBriefcase/>
+             Software Engineer
+            </div>
+            <div class="text-neutral-700 text-sm font-light leading-none  inline-flex gap-2">
+              <GrLocation/>
+              Lagos, Nigeria
+            </div>
+          </div>
+
+          <div class="w-96 h-48 flex-col justify-start items-start gap-4 inline-flex">
+            <div class="text-black text-base font-medium">About</div>
+            <div class="w-96 px-4 py-5 bg-neutral-100 rounded-3xl justify-start items-start gap-2.5 inline-flex">
+              <div class="grow shrink basis-0 text-neutral-700 text-base font-normal leading-tight">
+                Passionate engineer with a history of innovative
+                problem-solving. Extensive experience in designing and
+                optimizing complex systems. Skilled at collaborating across
+                multidisciplinary teams, driving projects from concept to
+                reality. Constantly seeking to push technical boundaries and
+                deliver impactful solutions. I use C++. Golang and React for
+                Development
+              </div>
+            </div>
+          </div>
+
+          <div class="w-60 h-12 px-16 py-4 bg-blue-950 rounded-3xl justify-center items-center gap-2.5 inline-flex mt-10">
+            <div class="text-lime-500 text-sm font-medium leading-none">
+              Get in touch
+            </div>
+          </div>
         </div>
-        <div className="flex gap-4 bg-pink-500">
-          <p>software engineer</p>
-          <p>Lagos,nigeria</p>
+
+        <div>
+          <div class="w-72 h-72 flex-col justify-start items-start gap-8 inline-flex">
+            <div class="flex-col justify-start items-start gap-2 flex">
+              <div className="text-black text-base font-medium leading-none">
+                Status
+              </div>
+              <div className="px-2 py-1 bg-green-50 rounded-2xl justify-center items-center gap-2.5 inline-flex">
+                <div className="text-lime-300 text-xs font-normal leading-none">
+                  Available
+                </div>
+              </div>
+            </div>
+            <div className="flex-col justify-start items-start gap-6 flex">
+              <div className="w-72 justify-between items-start gap-[100px] inline-flex">
+                <div className="text-black text-base font-medium leading-none">
+                  Average Rating
+                </div>
+                <div className="justify-start items-center gap-1 flex">
+                  <div className="text-zinc-500 text-sm font-normal leading-none inline-flex gap-2">
+                    <BsStarFill className="text-[#020061]"/>
+                    4.8
+                  </div>
+                </div>
+              </div>
+              <div className="flex-col justify-start items-start gap-6 flex">
+                <div className="w-72 justify-between items-start gap-[100px] inline-flex">
+                  <div className="text-black text-sm font-normal leading-none">
+                    Osup Emmanuel
+                  </div>
+                  <div className="justify-start items-center gap-1 flex">
+                    <div className="text-zinc-500 text-sm font-normal leading-none inline-flex gap-1">
+                    <BsStarFill className="text-[#020061]"/>
+                      5.0
+                    </div>
+                  </div>
+                </div>
+                <div className="w-72 justify-between items-center gap-[100px] inline-flex">
+                  <div className="text-black text-sm font-normal leading-none">
+                    Matthew Ola
+                  </div>
+                  <div className="justify-start items-center gap-1 flex">
+                    <div className="text-zinc-500 text-sm font-normal leading-none inline-flex gap-2">
+                    <BsStarFill className="text-[#020061]"/>
+                      4.7
+                    </div>
+                  </div>
+                </div>
+                <div className="w-72 justify-between items-center gap-[100px] inline-flex">
+                  <div className="text-black text-sm font-normal leading-none">
+                    Omosefe Igb
+                  </div>
+                  <div className="justify-start items-center gap-1 flex">
+                    <div className="text-zinc-500 text-sm font-normal leading-none inline-flex gap-2">
+                    <BsStarFill className="text-[#020061]"/>
+                      4.6
+                    </div>
+                  </div>
+                </div>
+                <div className="w-72 justify-between items-center inline-flex gap-[100px]">
+                  <div className="text-black text-sm font-normal leading-none">
+                    Oguns Sharaf
+                  </div>
+                  <div className="justify-start items-center gap-1 flex ">
+                    <div className="text-zinc-500 text-sm font-normal leading-none inline-flex gap-2">
+                    <BsStarFill className="text-[#020061]"/>
+                      4.8
+                    </div>
+                  </div>
+                </div>
+                <div className="w-72 justify-between items-end inline-flex gap-[100px]">
+                  <div className="text-black text-sm font-normal leading-none">
+                    Modupe Efe
+                  </div>
+                  <div className="justify-start items-center gap-1 flex">
+                    <div className="text-zinc-500 text-sm font-normal leading-none inline-flex  gap-2">
+                    <BsStarFill className="text-[#020061]"/>
+                      4.9
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <p className="bg-orange-300">About</p>
-        <div className="bg-yellow-200 p-4 rounded-2xl">
-          Passionate engineer with a history of innovative problem-solving.
-          Extensive experience in designing and optimizing complex systems.
-          Skilled at collaborating across multidisciplinary teams, driving
-          projects from concept to reality. Constantly seeking to push technical
-          boundaries and deliver impactful solutions. I use C++. Golang and
-          React for Development
-        </div>
-        <p className="mt-4 p-4 bg-slate-600 inline-block rounded-full">
-          Get in Touch
-        </p>
       </div>
-      <div className="bg-blue-600">
-        <p>itme 1</p>
-        <p>item 3</p>
-        <p>item 4</p>
-      </div>
-    </div>
+    </>
   );
 };
 
