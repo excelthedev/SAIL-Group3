@@ -30,9 +30,9 @@ const Centralview = () => {
           <div>
             <ul className={classes.navigations}>
               <li>
-                <a href="#" className={classes.listA}>
+                <Link to="/dashboard" href="#" className={classes.listA}>
                   <FaBars /> All
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#" className={classes.listA}>

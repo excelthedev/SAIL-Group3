@@ -23,20 +23,19 @@ const useCustomApi = (url, requestBody) => {
     }
   };
 
-  // const getApi = async () => {
-  //   setLoading(true);
-  //   try {
-  //     const { data } = await api.get(url, requestBody);
-  //     setData(data);
-  //     setLoading(false);
-  //     navigate("/dashboard", { replace: true });
-  //   } catch (error) {
-  //     setError(error.response);
-  //     setLoading(false);
-  //   }
-  // };
+  const getApi = async () => {
+    setLoading(true);
+    try {
+      const { data } = await api.get(url, requestBody);
+      setData(data);
+      setLoading(false);
+    } catch (error) {
+      setError(error.response);
+      setLoading(false);
+    }
+  };
 
-  return { postApi, data, error, loading };
+  return { getApi, postApi, data, error, loading };
 };
 
 export default useCustomApi;
