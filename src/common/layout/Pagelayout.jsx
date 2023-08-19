@@ -78,10 +78,10 @@ const Centralview = () => {
               <p className={classes.personText}>Personal</p>
               <ul className={classes.navigations}>
                 <li>
-                  <a href="#" className={classes.listA}>
+                  <Link to="/edit-profile" className={classes.listA}>
                     <FaUser />
                     Profile
-                  </a>
+                  </Link>
                 </li>
 
                 <li>

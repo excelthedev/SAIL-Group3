@@ -10,7 +10,7 @@ import useCustomApi from "./custom-hooks/useCustomApi";
 import Dashboard from "./views/Dashboard/Dashboard";
 import User from "./views/Dashboard/User/User";
 import Test from "./views/Dashboard/User/Test";
-
+import Profile  from "./views/Dashboard/User/Profile";
 const App = () => {
   return (
     <Routes>
@@ -23,6 +23,7 @@ const App = () => {
       <Route element={<Pagelayout />}>
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/user-profile" element={<Test />} />
+        <Route path="/edit-profile" element={<Profile />} />
       </Route>
 
       {/* <Route element={<Pagelayout />}>

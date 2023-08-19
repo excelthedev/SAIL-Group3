@@ -45,10 +45,8 @@ const Test = () => {
             </div>
           </div>
 
-          <div class="w-60 h-12 px-16 py-4 bg-blue-950 rounded-3xl justify-center items-center gap-2.5 inline-flex mt-10">
-            <div class="text-lime-500 text-sm font-medium leading-none">
-              Get in touch
-            </div>
+          <div class="">
+          <button type="submit" className="w-60 h-12 px-16 py-4 bg-blue-950 rounded-3xl justify-center items-center gap-2.5 inline-flex text-lime-500 text-sm font-medium leading-[18px] mt-10">Get in touch</button>
           </div>
         </div>
 
