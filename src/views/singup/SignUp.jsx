@@ -113,7 +113,7 @@ const Login = () => {
         </div>
 
         <div className="grid pb-2">
-          <p className="text-[20px] pl-1 mb-2">About You</p>
+          <p className="text-[20px] pl-1 mb-2">Tell us About Yourself</p>
           <input
             type="text"
             placeholder="About you"
