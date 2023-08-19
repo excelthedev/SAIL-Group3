@@ -1,6 +1,6 @@
-import {HiOutlineBriefcase} from "react-icons/hi"
-import {GrLocation} from "react-icons/gr"
-import {BsStarFill} from "react-icons/bs"
+import { HiOutlineBriefcase } from "react-icons/hi";
+import { GrLocation } from "react-icons/gr";
+import { BsStarFill } from "react-icons/bs";
 
 const Test = () => {
   return (
@@ -21,11 +21,11 @@ const Test = () => {
 
           <div className=" flex justify-start items-center gap-10">
             <div class="text-zinc-600 text-sm font-normal leading-none  inline-flex gap-2">
-              < HiOutlineBriefcase/>
-             Software Engineer
+              <HiOutlineBriefcase />
+              Software Engineer
             </div>
             <div class="text-neutral-700 text-sm font-light leading-none  inline-flex gap-2">
-              <GrLocation/>
+              <GrLocation />
               Lagos, Nigeria
             </div>
           </div>
@@ -71,7 +71,7 @@ const Test = () => {
                 </div>
                 <div className="justify-start items-center gap-1 flex">
                   <div className="text-zinc-500 text-sm font-normal leading-none inline-flex gap-2">
-                    <BsStarFill className="text-[#020061]"/>
+                    <BsStarFill className="text-[#020061]" />
                     4.8
                   </div>
                 </div>
@@ -83,7 +83,7 @@ const Test = () => {
                   </div>
                   <div className="justify-start items-center gap-1 flex">
                     <div className="text-zinc-500 text-sm font-normal leading-none inline-flex gap-1">
-                    <BsStarFill className="text-[#020061]"/>
+                      <BsStarFill className="text-[#020061]" />
                       5.0
                     </div>
                   </div>
@@ -94,7 +94,7 @@ const Test = () => {
                   </div>
                   <div className="justify-start items-center gap-1 flex">
                     <div className="text-zinc-500 text-sm font-normal leading-none inline-flex gap-2">
-                    <BsStarFill className="text-[#020061]"/>
+                      <BsStarFill className="text-[#020061]" />
                       4.7
                     </div>
                   </div>
@@ -105,7 +105,7 @@ const Test = () => {
                   </div>
                   <div className="justify-start items-center gap-1 flex">
                     <div className="text-zinc-500 text-sm font-normal leading-none inline-flex gap-2">
-                    <BsStarFill className="text-[#020061]"/>
+                      <BsStarFill className="text-[#020061]" />
                       4.6
                     </div>
                   </div>
@@ -116,7 +116,7 @@ const Test = () => {
                   </div>
                   <div className="justify-start items-center gap-1 flex ">
                     <div className="text-zinc-500 text-sm font-normal leading-none inline-flex gap-2">
-                    <BsStarFill className="text-[#020061]"/>
+                      <BsStarFill className="text-[#020061]" />
                       4.8
                     </div>
                   </div>
@@ -127,7 +127,7 @@ const Test = () => {
                   </div>
                   <div className="justify-start items-center gap-1 flex">
                     <div className="text-zinc-500 text-sm font-normal leading-none inline-flex  gap-2">
-                    <BsStarFill className="text-[#020061]"/>
+                      <BsStarFill className="text-[#020061]" />
                       4.9
                     </div>
                   </div>
