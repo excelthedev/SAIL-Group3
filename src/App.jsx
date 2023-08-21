@@ -10,6 +10,8 @@ import useCustomApi from "./custom-hooks/useCustomApi";
 import Dashboard from "./views/Dashboard/Dashboard";
 import User from "./views/Dashboard/User/User";
 import Test from "./views/Dashboard/User/Test";
+import Guestdashboard from "./views/Dashboard/Guestdashboard";
+import GuestLayout from "./common/layout/GuestLayout";
 
 const App = () => {
   return (
@@ -23,6 +25,10 @@ const App = () => {
       <Route element={<Pagelayout />}>
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/user-profile" element={<Test />} />
+      </Route>
+
+      <Route element={<GuestLayout />}>
+        <Route path="/guest-dashboard" element={<Guestdashboard />} />
       </Route>
 
       {/* <Route element={<Pagelayout />}>

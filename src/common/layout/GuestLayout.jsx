@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./Pagelayout.module.css";
+import classes from "./GuestLayout.module.css";
 import logo from "../../assets/images/Talent-logo.svg";
 import {
   FaBars,
@@ -14,6 +14,7 @@ import {
   FaClock,
 } from "react-icons/fa6";
 import { Link, Outlet } from "react-router-dom";
+import Dashboard from "../../views/Dashboard/Dashboard";
 
 const Centralview = () => {
   return (
@@ -74,7 +75,7 @@ const Centralview = () => {
           </div>
           <div>
             {/* SINGED IN PROFILE PROP SHOULD GO HERE */}
-            <div>
+            {/* <div>
               {}
               <p className={classes.personText}>Personal</p>
               <ul className={classes.navigations}>
@@ -92,13 +93,13 @@ const Centralview = () => {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
 
             {/* SIGN IN AND SIGN OUT BUTTON SHOULD GO HERE */}
 
             <Link to="/">
               <a href="#" className={classes.signInHere}>
-                <FaRightToBracket /> Sign Out
+                <FaRightToBracket /> Sign In
               </a>
             </Link>
           </div>
@@ -121,7 +122,7 @@ const Centralview = () => {
             </div>
             <div className={classes.asideGuest}>
               <h1 className={classes.asideG}>G</h1>{" "}
-              <p className={classes.asideGText}>Hi Welcome User</p>
+              <p className={classes.asideGText}>Hi Guest</p>
             </div>
           </div>
           <Outlet />

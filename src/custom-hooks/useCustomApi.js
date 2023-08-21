@@ -35,6 +35,18 @@ const useCustomApi = (url, requestBody) => {
     }
   };
 
+  const putApi = async () => {
+    setLoading(true);
+    try {
+      const { data } = await api.put(url, requestBody);
+      setData(data);
+      setLoading(false);
+    } catch (error) {
+      setError(error.response);
+      setLoading(false);
+    }
+  };
+
   return { getApi, postApi, data, error, loading };
 };
 

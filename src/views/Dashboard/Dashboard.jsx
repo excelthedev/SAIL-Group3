@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./Dashboard.module.css";
 import User from "./User/User";
+import { Outlet } from "react-router-dom";
 
 const Body = () => {
   return (

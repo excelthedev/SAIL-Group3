@@ -64,11 +64,18 @@ const Monetisetalent = () => {
 
         <button
           type="submit"
-          className=" bg-[#020061] text-[#89D92B] font-medium grid w-full p-5 rounded-full mt-8 shadow-[3px_4px_1px_#89D92B]"
+          className=" bg-[#020061] text-[#89D92B] font-medium grid w-full p-5 rounded-full mt-8 shadow-[3px_4px_1px_#89D92B] mb-4"
         >
           Log in
         </button>
       </form>
+
+      <p className="text-center text-[#606060]">
+        Don't have an account?{" "}
+        <Link to="/">
+          <span className="text-[#89D92B] cursor-pointer">Sign Up</span>
+        </Link>
+      </p>
 
       {/* <div className="flex items-center justify-between" v>
         <div

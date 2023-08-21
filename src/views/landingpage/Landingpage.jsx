@@ -25,7 +25,7 @@ const Landingpage = () => {
         </p>
       </div>
       {/* art and craft */}
-      <div className="flex flex-col gap-6 mb-12 sm:mb-[20rem]">
+      <div className="flex flex-col gap-6 mb-12 sm:mb-[10rem]">
         <div className="flex items-center justify-between w-[72%] mb-3 sm:w-full">
           <p className="inline-block px-7 py-2  rounded-full border-[#020061] border-[6px] text-[#89D92B]">
             Art And craft
@@ -58,17 +58,24 @@ const Landingpage = () => {
       {/* button */}
 
       <div className="grid">
+        <Link to="/guest-dashboard" className="grid">
+          <button className="bg-[#020061] text-[#89D92B] font-medium p-5 rounded-full shadow-[3px_4px_1px_#89D92B] mb-4 sm:mb-8 ">
+            Hire a Talent
+          </button>
+        </Link>
+
         <Link to="/signup-page" className="grid">
-          <button className="border-[#020061] text-[#020061] border-[3px] font-medium p-5 rounded-full border-b-4 mb-4">
+          <button className="border-[#020061] text-[#020061] border-[3px] font-medium p-5 rounded-full border-b-4 mb-1">
             Monetize your Talent
           </button>
         </Link>
 
-        <Link to="/login-page" className="grid">
-          <button className="bg-[#020061] text-[#89D92B] font-medium p-5 rounded-full shadow-[3px_4px_1px_#89D92B] mb-4 sm:mb-8">
-            Hire a Talent
-          </button>
-        </Link>
+        <p className="text-center text-[#606060]">
+          I have an account?{" "}
+          <Link to="/login-page">
+            <span className="text-[#89D92B] cursor-pointer">Sign in</span>
+          </Link>
+        </p>
       </div>
     </div>
   );
