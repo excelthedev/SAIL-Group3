@@ -89,7 +89,7 @@ const Login = () => {
           </div>
         </div>
         <div className="grid grid-cols-2 gap-3">
-          <div className="grid pb-4">
+          {/* <div className="grid pb-4">
             <p className="text-[20px] pl-1 mb-2">Field</p>
             <input
               type="text"
@@ -98,6 +98,21 @@ const Login = () => {
               onChange={(e) => setRequest("field", e.target.value)}
               className=" rounded-full px-6 py-5 bg-[#F5F5F5]"
             />
+          </div> */}
+          <div className="grid pb-4">
+            <p className="text-[20px] pl-1 mb-2">Field</p>
+            <select
+              value={inputValue?.field}
+              onChange={(e) => setRequest("field", e.target.value)}
+              className=" rounded-full px-6 py-5 bg-[#F5F5F5]"
+            >
+              <option value="technology">Technology</option>
+              <option value="education">Education</option>
+              <option value="art and craft">Art and Craft</option>
+              <option value="media">Media</option>
+              <option value="events">Events</option>
+              <option value="health">Health</option>
+            </select>
           </div>
 
           <div className="grid pb-4">
