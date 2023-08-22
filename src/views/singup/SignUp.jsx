@@ -105,13 +105,18 @@ const Login = () => {
               value={inputValue?.field}
               onChange={(e) => setRequest("field", e.target.value)}
               className=" rounded-full px-6 py-5 bg-[#F5F5F5]"
+              required
             >
-              <option value="technology">Technology</option>
-              <option value="education">Education</option>
-              <option value="art and craft">Art and Craft</option>
-              <option value="media">Media</option>
-              <option value="events">Events</option>
-              <option value="health">Health</option>
+              <option value="none" selected="selected" hidden>
+                Select an Option
+              </option>
+              <option value="Technology">Technology</option>
+              <option value="Education">Education</option>
+              <option value="Art and Craft">Art and Craft</option>
+              <option value="Media">Media</option>
+              <option value="Events">Events</option>
+              <option value="Health">Health</option>
+              <option value="Random">Random</option>
             </select>
           </div>
 
