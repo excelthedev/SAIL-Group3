@@ -1,8 +1,12 @@
 import { HiOutlineBriefcase } from "react-icons/hi";
 import { GrLocation } from "react-icons/gr";
 import { BsStarFill } from "react-icons/bs";
+import { useLocation } from "react-router-dom";
 
 const Test = () => {
+  const location = useLocation();
+  const userData = location.state;
+  console.log(userData);
   return (
     <>
       <div className=" flex flex-row justify-between items-start p-10">
@@ -15,16 +19,16 @@ const Test = () => {
               </div>
             </div>
             <div class="text-black text-base font-medium leading-none">
-              Ogunmepon Sharafa
+              {userData.first_name + " " + userData.last_name}
             </div>
           </div>
 
           <div className=" flex justify-start items-center gap-10">
             <div class="text-zinc-600 text-sm font-normal leading-none  inline-flex gap-2">
               <HiOutlineBriefcase />
-              Software Engineer
+              {userData.profession}
             </div>
-            <div class="text-neutral-700 text-sm font-light leading-none  inline-flex gap-2">
+            <div class="text-neutragitl-700 text-sm font-light leading-none  inline-flex gap-2">
               <GrLocation />
               Lagos, Nigeria
             </div>
@@ -34,13 +38,7 @@ const Test = () => {
             <div class="text-black text-base font-medium">About</div>
             <div class="w-96 px-4 py-5 bg-neutral-100 rounded-3xl justify-start items-start gap-2.5 inline-flex">
               <div class="grow shrink basis-0 text-neutral-700 text-base font-normal leading-tight">
-                Passionate engineer with a history of innovative
-                problem-solving. Extensive experience in designing and
-                optimizing complex systems. Skilled at collaborating across
-                multidisciplinary teams, driving projects from concept to
-                reality. Constantly seeking to push technical boundaries and
-                deliver impactful solutions. I use C++. Golang and React for
-                Development
+                {userData.aboutYou}
               </div>
             </div>
           </div>

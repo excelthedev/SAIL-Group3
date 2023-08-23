@@ -1,3 +1,5 @@
+import { useLocation } from "react-router-dom";
+
 const Profile = () => {
   return <div>Profile</div>;
 };

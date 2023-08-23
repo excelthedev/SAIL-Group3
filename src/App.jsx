@@ -12,6 +12,7 @@ import User from "./views/Dashboard/User/User";
 import Test from "./views/Dashboard/User/Test";
 import Guestdashboard from "./views/Dashboard/Guestdashboard";
 import GuestLayout from "./common/layout/GuestLayout";
+import Notfound from "./views/404page/Notfound";
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
       <Route element={<GuestLayout />}>
         <Route path="/guest-dashboard" element={<Guestdashboard />} />
       </Route>
+      <Route path="*" element={<Notfound />}></Route>
 
       {/* <Route element={<Pagelayout />}>
         <Route path="/user" element={<Test />} />

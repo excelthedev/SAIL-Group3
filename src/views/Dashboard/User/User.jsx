@@ -114,7 +114,9 @@ const Person = () => {
 
                   <div className={classes.profilePick}>
                     <p className={classes.viewTalent}>
-                      <Link to="/user-profile">View Talent</Link>
+                      <Link to="/user-profile" state={user}>
+                        View Talent
+                      </Link>
                     </p>
                     <p className={classes.occupation}>
                       <FaStar className={classes.fontStar} />
