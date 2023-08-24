@@ -10,6 +10,7 @@ const useCustomApi = (url, requestBody) => {
   const { api } = axiosConfig();
   const navigate = useNavigate();
 
+  // setting the post format
   const postApi = async () => {
     setLoading(true);
     try {
@@ -23,6 +24,7 @@ const useCustomApi = (url, requestBody) => {
     }
   };
 
+  // setting the get format for the data
   const getApi = async () => {
     setLoading(true);
     try {
@@ -35,6 +37,7 @@ const useCustomApi = (url, requestBody) => {
     }
   };
 
+  // setting the put format for the data
   const putApi = async () => {
     setLoading(true);
     try {

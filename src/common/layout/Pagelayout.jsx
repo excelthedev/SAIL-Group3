@@ -35,40 +35,40 @@ const Centralview = () => {
                 </Link>
               </li>
               <li>
-                <a href="#" className={classes.listA}>
+                <Link to="/art-and-craft" className={classes.listA}>
                   <FaPaintRoller />
                   Art and Craft
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className={classes.listA}>
+                <Link to="/education" className={classes.listA}>
                   <FaBookOpen />
                   Education
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className={classes.listA}>
+                <Link to="/event" className={classes.listA}>
                   <FaCakeCandles />
                   Event
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className={classes.listA}>
+                <Link to="/health" className={classes.listA}>
                   <FaHeartPulse />
                   Health
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className={classes.listA}>
+                <Link to="/media" className={classes.listA}>
                   <FaVideo />
                   Media
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className={classes.listA}>
+                <Link to="/technology" className={classes.listA}>
                   <FaMicrochip />
                   Technology
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
