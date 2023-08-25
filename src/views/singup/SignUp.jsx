@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import leftArrow from "../../assets/icons/arrow-left.svg";
 import useGetInputValue from "../../custom-hooks/useGetInputValue";
 import useCustomApi from "../../custom-hooks/useCustomApi";
@@ -24,16 +24,19 @@ const Login = () => {
   const onSubmit = (e) => {
     e.preventDefault();
     postApi();
+    localStorage.setItem("firstName", data.firstName);
   };
+
+  const navigate = useNavigate();
 
   return (
     <>
-      <div className="grid grid-cols-2 items-center mb-4">
+      <div className="flex gap-10 items-center mb-4">
         <img
           src={leftArrow}
           alt=""
           className="bg-[#020061] rounded-full p-3 cursor-pointer"
-          onClick={() => window.history.back()}
+          onClick={() => navigate("/")}
         />
         <p className="text-[2rem] text-[#020061] font-bold  inline-block">
           Please Sign up Here,

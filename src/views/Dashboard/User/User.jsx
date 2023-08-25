@@ -11,6 +11,9 @@ const Person = () => {
     process.env.REACT_APP_API_GETUSER_URL
   );
 
+  // localStorage.setItem("data", data[data.length - 1]);
+  // console.log(data[data.length - 1]);
+
   useEffect(() => {
     getApi();
   }, []);
@@ -88,7 +91,7 @@ const Person = () => {
         })} */}
 
         {Array.isArray(data)
-          ? data.map((user) => {
+          ? data.slice(0, -1).map((user) => {
               return (
                 <div className={classes.boxPerson}>
                   <div className={classes.profile}>

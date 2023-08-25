@@ -19,6 +19,7 @@ import Education from "./views/SideBars/Education";
 import Event from "./views/SideBars/Event";
 import Health from "./views/SideBars/Health";
 import Media from "./views/SideBars/Media";
+import Profile from "./views/Dashboard/User/Profile";
 
 const App = () => {
   return (
@@ -38,6 +39,7 @@ const App = () => {
         <Route path="/event" element={<Event />} />
         <Route path="/media" element={<Media />} />
         <Route path="/health" element={<Health />} />
+        <Route path="/profile" element={<Profile />}></Route>
       </Route>
 
       <Route element={<GuestLayout />}>

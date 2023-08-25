@@ -1,5 +1,5 @@
 import { React, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import leftArrow from "../../assets/icons/arrow-left.svg";
 import useGetInputValue from "../../custom-hooks/useGetInputValue";
 import useCustomApi from "../../custom-hooks/useCustomApi";
@@ -21,14 +21,16 @@ const Monetisetalent = () => {
     postApi();
   };
 
+  const navigate = useNavigate();
+
   return (
     <>
-      <div className="grid grid-cols-2 items-center mb-4">
+      <div className="flex gap-8 items-center mb-4">
         <img
           src={leftArrow}
           alt=""
           className="bg-[#020061] rounded-full p-3 cursor-pointer"
-          onClick={() => window.history.back()}
+          onClick={() => navigate("/")}
         />
         <p className="text-[2rem] text-[#020061] font-bold  inline-block">
           Welcome, Please Log in
@@ -72,7 +74,7 @@ const Monetisetalent = () => {
 
       <p className="text-center text-[#606060]">
         Don't have an account?{" "}
-        <Link to="/">
+        <Link to="/signup-page">
           <span className="text-[#89D92B] cursor-pointer">Sign Up</span>
         </Link>
       </p>
