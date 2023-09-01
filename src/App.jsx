@@ -21,6 +21,7 @@ import Health from "./views/SideBars/Health";
 import Media from "./views/SideBars/Media";
 import Profile from "./views/Dashboard/User/Profile";
 import NewSignUp from "./views/signup/NewSignUp";
+import Loader from "./views/Dashboard/component/Loader";
 
 const App = () => {
   return (

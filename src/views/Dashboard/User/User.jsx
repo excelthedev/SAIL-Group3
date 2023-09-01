@@ -3,6 +3,7 @@ import classes from "./User.module.css";
 import { FaComputer, FaLocationDot, FaStar, FaToolbox } from "react-icons/fa6";
 import personImg from "../../../assets/images/person.jpg";
 import Persondata from "./Dummdata";
+import Loader from "../component/Loader";
 import { Link } from "react-router-dom";
 import useCustomApi from "../../../custom-hooks/useCustomApi";
 
@@ -90,46 +91,48 @@ const Person = () => {
           );
         })} */}
 
-        {Array.isArray(data)
-          ? data.map((user) => {
-              return (
-                <div className={classes.boxPerson}>
-                  <div className={classes.profile}>
-                    <img
-                      src={personImg}
-                      alt="personImage"
-                      className={classes.imgPerson}
-                    />
-                    <h1 className={classes.personName}>
-                      {user.first_name + " " + user.last_name}
-                    </h1>
-                    <p className={classes.available}>Available</p>
-                  </div>
-
-                  <div className={classes.profileJob}>
-                    <p className={classes.occupation}>
-                      <FaToolbox /> {user.field}
-                    </p>
-                    <p className={classes.occupation}>
-                      <FaLocationDot /> {user.profession}
-                    </p>
-                  </div>
-
-                  <div className={classes.profilePick}>
-                    <p className={classes.viewTalent}>
-                      <Link to="/user-profile" state={user}>
-                        View Talent
-                      </Link>
-                    </p>
-                    <p className={classes.occupation}>
-                      <FaStar className={classes.fontStar} />
-                      4.8
-                    </p>
-                  </div>
+        {Array.isArray(data) ? (
+          data.map((user) => {
+            return (
+              <div className={classes.boxPerson}>
+                <div className={classes.profile}>
+                  <img
+                    src={personImg}
+                    alt="personImage"
+                    className={classes.imgPerson}
+                  />
+                  <h1 className={classes.personName}>
+                    {user.first_name + " " + user.last_name}
+                  </h1>
+                  <p className={classes.available}>Available</p>
                 </div>
-              );
-            })
-          : "Loading...Please Wait a moment!"}
+
+                <div className={classes.profileJob}>
+                  <p className={classes.occupation}>
+                    <FaToolbox /> {user.field}
+                  </p>
+                  <p className={classes.occupation}>
+                    <FaLocationDot /> {user.state + ",  " + user.country}
+                  </p>
+                </div>
+
+                <div className={classes.profilePick}>
+                  <p className={classes.viewTalent}>
+                    <Link to="/user-profile" state={user}>
+                      View Talent
+                    </Link>
+                  </p>
+                  <p className={classes.occupation}>
+                    <FaStar className={classes.fontStar} />
+                    4.8
+                  </p>
+                </div>
+              </div>
+            );
+          })
+        ) : (
+          <Loader />
+        )}
       </div>
     </>
   );
