@@ -91,7 +91,7 @@ const Person = () => {
         })} */}
 
         {Array.isArray(data)
-          ? data.slice(0, -1).map((user) => {
+          ? data.map((user) => {
               return (
                 <div className={classes.boxPerson}>
                   <div className={classes.profile}>
@@ -129,7 +129,7 @@ const Person = () => {
                 </div>
               );
             })
-          : []}
+          : "Loading...Please Wait a moment!"}
       </div>
     </>
   );

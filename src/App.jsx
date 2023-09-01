@@ -5,7 +5,7 @@ import Landingpage from "./views/landingpage/Landingpage";
 import Monetisetalent from "./views/login/Monetisetalent";
 import Pagelayout from "./common/layout/Pagelayout";
 
-import Signup from "./views/singup/SignUp";
+import Signup from "./views/signup/SignUp";
 import useCustomApi from "./custom-hooks/useCustomApi";
 import Dashboard from "./views/Dashboard/Dashboard";
 import User from "./views/Dashboard/User/User";
@@ -20,6 +20,7 @@ import Event from "./views/SideBars/Event";
 import Health from "./views/SideBars/Health";
 import Media from "./views/SideBars/Media";
 import Profile from "./views/Dashboard/User/Profile";
+import NewSignUp from "./views/signup/NewSignUp";
 
 const App = () => {
   return (

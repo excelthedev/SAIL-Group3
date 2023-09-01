@@ -7,6 +7,8 @@ const Test = () => {
   const location = useLocation();
   const userData = location.state;
   console.log(userData);
+
+  const whatsApp = `https://wa.me/${userData.phoneNumber}?text=Hi%20I'm%20from%20Talent%20Base`;
   return (
     <>
       <div className=" flex flex-row justify-between items-start p-10">
@@ -30,7 +32,7 @@ const Test = () => {
             </div>
             <div class="text-neutragitl-700 text-sm font-light leading-none  inline-flex gap-2">
               <GrLocation />
-              Lagos, Nigeria
+              {userData.state + " , " + userData.country}
             </div>
           </div>
 
@@ -43,11 +45,13 @@ const Test = () => {
             </div>
           </div>
 
-          <div class="w-60 h-12 px-16 py-4 bg-blue-950 rounded-3xl justify-center items-center gap-2.5 inline-flex mt-10">
-            <div class="text-lime-500 text-sm font-medium leading-none">
-              Get in touch
+          <a href={whatsApp} target="_blank">
+            <div class="w-60 h-12 px-16 py-4 bg-blue-950 rounded-3xl justify-center items-center gap-2.5 inline-flex mt-10 cursor-pointer">
+              <div class="text-lime-500 text-sm font-medium leading-none">
+                Get in touch
+              </div>
             </div>
-          </div>
+          </a>
         </div>
 
         <div>

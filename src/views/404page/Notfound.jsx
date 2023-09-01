@@ -18,7 +18,7 @@ const Notfound = () => {
           <p className="text-[1.3rem] text-[#020061]">
             OOOPS LOOKS LIKE YOU CAME TO A WRONG PAGE, KINDLY GO BACK TO THE{" "}
             <Link to="/">
-              <span className="font-bold text-[#89D92B]">HOME PAGE PLEASE</span>
+              <span className="font-bold text-[#89D92B]">HOME PAGE</span> PLEASE
             </Link>
           </p>
         </div>

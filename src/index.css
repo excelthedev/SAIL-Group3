@@ -7,7 +7,16 @@
   src: url("./assets/fonts/DuplicateSans-Medium.ttf");
 }
 
+@font-face {
+  font-family: "dup-sans-300";
+  src: url("./assets/fonts/DuplicateSans-Thin.ttf");
+}
+
 html,
 body {
+  font-family: "dup-sans-500";
+}
+
+p {
   font-family: "dup-sans-500";
 }

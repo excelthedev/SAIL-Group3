@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import leftArrow from "../../assets/icons/arrow-left.svg";
 import useGetInputValue from "../../custom-hooks/useGetInputValue";
 import useCustomApi from "../../custom-hooks/useCustomApi";
@@ -7,12 +7,16 @@ import { apiEndpoints } from "../../api/endpoint";
 
 const Login = () => {
   const [inputValue, setInputValue] = useState({
-    firstName: "",
-    lastName: "",
+    first_name: "",
+    last_name: "",
     email: "",
     password: "",
     field: "",
     profession: "",
+    country: "",
+    state: "",
+    status: "",
+    phoneNumber: "",
     aboutYou: "",
   });
   const { setRequest } = useGetInputValue(setInputValue);
@@ -24,7 +28,6 @@ const Login = () => {
   const onSubmit = (e) => {
     e.preventDefault();
     postApi();
-    localStorage.setItem("firstName", data.firstName);
   };
 
   const navigate = useNavigate();
@@ -50,9 +53,10 @@ const Login = () => {
             <input
               type="text"
               placeholder="First Name"
-              value={inputValue?.firstName}
-              onChange={(e) => setRequest("firstName", e.target.value)}
+              value={inputValue?.first_name}
+              onChange={(e) => setRequest("first_name", e.target.value)}
               className=" rounded-full px-6 py-5 bg-[#F5F5F5]"
+              required
             />
           </div>
 
@@ -61,9 +65,10 @@ const Login = () => {
             <input
               type="text"
               placeholder="last Name"
-              value={inputValue?.lastName}
-              onChange={(e) => setRequest("lastName", e.target.value)}
+              value={inputValue?.last_name}
+              onChange={(e) => setRequest("last_name", e.target.value)}
               className=" rounded-full px-6 py-5 bg-[#F5F5F5]"
+              required
             />
           </div>
         </div>
@@ -77,6 +82,7 @@ const Login = () => {
               value={inputValue?.email}
               onChange={(e) => setRequest("email", e.target.value)}
               className=" rounded-full px-6 py-5 bg-[#F5F5F5]"
+              required
             />
           </div>
 
@@ -88,20 +94,42 @@ const Login = () => {
               value={inputValue?.password}
               onChange={(e) => setRequest("password", e.target.value)}
               className=" rounded-full px-6 py-5 bg-[#F5F5F5]"
+              required
             />
           </div>
         </div>
+
         <div className="grid grid-cols-2 gap-3">
-          {/* <div className="grid pb-4">
-            <p className="text-[20px] pl-1 mb-2">Field</p>
-            <input
-              type="text"
-              placeholder="Field"
-              value={inputValue?.field}
-              onChange={(e) => setRequest("field", e.target.value)}
+          <div className="grid pb-4">
+            <p className="text-[20px] pl-1 mb-2">Status</p>
+            <select
+              value={inputValue?.status}
+              onChange={(e) => setRequest("status", e.target.value)}
               className=" rounded-full px-6 py-5 bg-[#F5F5F5]"
+              required
+            >
+              <option value="none" selected="selected" hidden>
+                Select an Option
+              </option>
+              <option value="Available">Available to work</option>
+              <option value="Not-Available">Not-Available to work</option>
+            </select>
+          </div>
+
+          <div className="grid pb-4">
+            <p className="text-[20px] pl-1 mb-2">Phone Number</p>
+            <input
+              type="number"
+              placeholder="080-123-456-789"
+              value={inputValue?.phoneNumber}
+              onChange={(e) => setRequest("phoneNumber", e.target.value)}
+              className=" rounded-full px-6 py-5 bg-[#F5F5F5]"
+              required
             />
-          </div> */}
+          </div>
+        </div>
+
+        <div className="grid grid-cols-2 gap-3">
           <div className="grid pb-4">
             <p className="text-[20px] pl-1 mb-2">Field</p>
             <select
@@ -131,7 +159,42 @@ const Login = () => {
               value={inputValue?.profession}
               onChange={(e) => setRequest("profession", e.target.value)}
               className=" rounded-full px-6 py-5 bg-[#F5F5F5]"
+              required
             />
+          </div>
+        </div>
+
+        <div className="grid grid-cols-2 gap-3">
+          <div className="grid pb-4">
+            <p className="text-[20px] pl-1 mb-2">Country</p>
+            <select
+              value={inputValue?.country}
+              onChange={(e) => setRequest("country", e.target.value)}
+              className=" rounded-full px-6 py-5 bg-[#F5F5F5]"
+              required
+            >
+              <option value="none" selected="selected" hidden>
+                Select an Option
+              </option>
+              <option value="Nigeria">Nigeria</option>
+              <option value="Others">Others</option>
+            </select>
+          </div>
+
+          <div className="grid pb-4">
+            <p className="text-[20px] pl-1 mb-2">State</p>
+            <select
+              value={inputValue?.state}
+              onChange={(e) => setRequest("state", e.target.value)}
+              className=" rounded-full px-6 py-5 bg-[#F5F5F5]"
+              required
+            >
+              <option value="none" selected="selected" hidden>
+                Select an Option
+              </option>
+              <option value="Nigeria">Lagos</option>
+              <option value="Abuja">Abuja</option>
+            </select>
           </div>
         </div>
 
@@ -143,6 +206,7 @@ const Login = () => {
             value={inputValue?.aboutYou}
             onChange={(e) => setRequest("aboutYou", e.target.value)}
             className=" rounded-full px-6 py-5 bg-[#F5F5F5]"
+            required
           />
         </div>
 
