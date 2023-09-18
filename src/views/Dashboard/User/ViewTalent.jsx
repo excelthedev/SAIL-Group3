@@ -20,7 +20,7 @@ const Test = () => {
                 G
               </div>
             </div>
-            <div class="text-black text-base font-medium leading-none">
+            <div class="text-black text-xl font-semibold leading-none">
               {userData.first_name + " " + userData.last_name}
             </div>
           </div>
@@ -36,9 +36,9 @@ const Test = () => {
             </div>
           </div>
 
-          <div class="w-96 h-48 flex-col justify-start items-start gap-4 inline-flex">
+          <div class="w-96  flex-col justify-start items-start gap-4 inline-flex">
             <div class="text-black text-base font-medium">About</div>
-            <div class="w-96 px-4 py-5 bg-neutral-100 rounded-3xl justify-start items-start gap-2.5 inline-flex">
+            <div class="w-[30rem] px-4 py-5 bg-neutral-100 rounded-3xl justify-start items-start gap-2.5 inline-flex">
               <div class="grow shrink basis-0 text-neutral-700 text-base font-normal leading-tight">
                 {userData.aboutYou}
               </div>
@@ -46,7 +46,7 @@ const Test = () => {
           </div>
 
           <a href={whatsApp} target="_blank">
-            <div class="w-60 h-12 px-16 py-4 bg-blue-950 rounded-3xl justify-center items-center gap-2.5 inline-flex mt-10 cursor-pointer">
+            <div class="w-60 px-16 py-4 bg-blue-950 rounded-3xl justify-center items-center gap-2.5 inline-flex mt-10 cursor-pointer">
               <div class="text-lime-500 text-sm font-medium leading-none">
                 Get in touch
               </div>

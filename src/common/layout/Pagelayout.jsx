@@ -88,7 +88,10 @@ const Centralview = () => {
                 <li>
                   <a href="#" className={classes.listA}>
                     <FaClock />
-                    History
+                    History{" "}
+                    <span className="text-[0.55rem] border-2 rounded-full px-[0.35rem] border-red-700 text-red-700">
+                      coming soon
+                    </span>
                   </a>
                 </li>
               </ul>
