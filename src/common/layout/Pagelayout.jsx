@@ -13,16 +13,17 @@ import {
   FaUser,
   FaClock,
 } from "react-icons/fa6";
-import { Link, Outlet } from "react-router-dom";
+import { Link, Navigate, Outlet, useNavigate } from "react-router-dom";
 
 const Centralview = () => {
+  const navigate = useNavigate();
   return (
     <div className={classes.dashboardLayout}>
       {/* DASHBOARD LOGO AND MAIN NAVIGATIONS GOES  IMAGE HERE  */}
 
       <div className={classes.homeBox}>
         <div className={classes.homeItems}>
-          <div className={classes.homeImgText}>
+          <div className={classes.homeImgText} onClick={() => navigate("/")}>
             <img src={logo} alt="Talent Base" />
             <p className={classes.homebigText}>TalentBase</p>
           </div>
