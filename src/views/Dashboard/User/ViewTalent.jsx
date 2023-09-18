@@ -60,7 +60,7 @@ const Test = () => {
               <div className="text-black text-base font-medium leading-none">
                 Status
               </div>
-              <div className="px-4 py-2 bg-green-50 rounded-2xl justify-center items-center gap-2.5 inline-flex">
+              <div className="px-4 py-2 border-red-600 border-2 rounded-2xl justify-center items-center gap-2.5 inline-flex">
                 <div
                   className={
                     userData.status === "Available"
