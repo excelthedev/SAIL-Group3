@@ -74,6 +74,17 @@
   font-weight: 300;
 }
 
+.notAvailable {
+  color: red;
+  display: inline-block;
+
+  padding: 3px 8px;
+  border: 2px solid red;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 300;
+}
+
 .occupation {
   display: flex;
   align-items: center;

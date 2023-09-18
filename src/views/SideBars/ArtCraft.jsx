@@ -32,7 +32,15 @@ const ArtCraft = () => {
                     <h1 className={classes.personName}>
                       {user.first_name + " " + user.last_name}
                     </h1>
-                    <p className={classes.available}>Available</p>
+                    <p
+                      className={
+                        user.status === "Available"
+                          ? classes.available
+                          : classes.notAvailable
+                      }
+                    >
+                      {user.status}
+                    </p>
                   </div>
 
                   <div className={classes.profileJob}>
