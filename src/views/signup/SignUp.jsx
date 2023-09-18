@@ -177,7 +177,7 @@ const Login = () => {
                 Select an Option
               </option>
               <option value="Nigeria">Nigeria</option>
-              <option value="Others">Others</option>
+              <option value="Ghana">Ghana</option>
             </select>
           </div>
 
@@ -192,8 +192,9 @@ const Login = () => {
               <option value="none" selected="selected" hidden>
                 Select an Option
               </option>
-              <option value="Nigeria">Lagos</option>
+              <option value="Lagos">Lagos</option>
               <option value="Abuja">Abuja</option>
+              <option value="Port-Harcourt">Port-Harcourt</option>
             </select>
           </div>
         </div>
