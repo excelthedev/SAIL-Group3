@@ -66,6 +66,16 @@
   font-weight: 300;
 }
 
+.notAvailable {
+  color: red;
+  display: inline-block;
+  background-color: #f5f5f5;
+  padding: 3px 8px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 300;
+}
+
 .occupation {
   display: flex;
   align-items: center;

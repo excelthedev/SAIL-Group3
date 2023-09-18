@@ -60,9 +60,15 @@ const Test = () => {
               <div className="text-black text-base font-medium leading-none">
                 Status
               </div>
-              <div className="px-2 py-1 bg-green-50 rounded-2xl justify-center items-center gap-2.5 inline-flex">
-                <div className="text-lime-300 text-xs font-normal leading-none">
-                  Available
+              <div className="px-4 py-2 bg-green-50 rounded-2xl justify-center items-center gap-2.5 inline-flex">
+                <div
+                  className={
+                    userData.status === "Available"
+                      ? "text-lime-300 text-l font-normal leading-none"
+                      : "text-red-600 text-l font-normal leading-none"
+                  }
+                >
+                  {userData.status}
                 </div>
               </div>
             </div>
