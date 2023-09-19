@@ -90,7 +90,7 @@ const Centralview = () => {
                   <Link to="/dashboard" className={classes.listA}>
                     <FaClock />
                     History{" "}
-                    <span className="text-[0.55rem] border-2 rounded-full px-[0.35rem] border-red-700 text-red-700">
+                    <span className="text-[0.55rem] border-2 rounded-full px-[0.35rem] border-[ #cdcdcd] text-[ #cdcdcd]">
                       coming soon
                     </span>
                   </Link>
@@ -125,7 +125,7 @@ const Centralview = () => {
             </div>
             <div className={classes.asideGuest}>
               <h1 className={classes.asideG}>G</h1>{" "}
-              <p className={classes.asideGText}>Hi Welcome User</p>
+              <p className={classes.asideGText}>Welcome, Afolabi Micheal</p>
             </div>
           </div>
           <Outlet />
