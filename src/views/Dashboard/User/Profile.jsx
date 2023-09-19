@@ -30,8 +30,9 @@ const Profile = () => {
                 </label>
                 <input
                   type="text"
-                  placeholder="Ogunmepon"
+                  placeholder="Afolabi"
                   className="bg-[#F5F5F5] block py-4 px-[4rem] rounded-full"
+                  disabled
                 />
               </div>
 
@@ -41,8 +42,9 @@ const Profile = () => {
                 </label>
                 <input
                   type="text"
-                  placeholder="Sharafa"
+                  placeholder="Micheal"
                   className="bg-[#F5F5F5] block py-4 px-[4rem]   rounded-full"
+                  disabled
                 />
               </div>
             </div>
@@ -52,8 +54,9 @@ const Profile = () => {
               </label>
               <input
                 type="text"
-                placeholder="ogunmeponsharafa@gmail.com"
-                className="bg-[#F5F5F5] block py-4 px-[3rem]   rounded-full w-full"
+                placeholder="afolabimicheal@gmail.com"
+                className="bg-[#F5F5F5] block py-4 px-[2rem]   rounded-full w-full"
+                disabled
               />
             </div>
           </div>
