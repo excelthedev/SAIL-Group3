@@ -124,7 +124,7 @@ const Centralview = () => {
               </form>
             </div>
             <div className={classes.asideGuest}>
-              <h1 className={classes.asideG}>G</h1>{" "}
+              <h1 className={classes.asideG}>A</h1>{" "}
               <p className={classes.asideGText}>Welcome, Afolabi Micheal</p>
             </div>
           </div>
