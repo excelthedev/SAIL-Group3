@@ -6,9 +6,12 @@ import { useLocation } from "react-router-dom";
 const Test = () => {
   const location = useLocation();
   const userData = location.state;
-  console.log(userData);
+  console.log(userData.phoneNumber);
 
-  const whatsApp = `https://wa.me/${userData.phoneNumber}?text=Hi%20I'm%20from%20Talent%20Base`;
+  const gh = userData.phoneNumber.slice(1, 11);
+  console.log(gh);
+
+  const whatsApp = `https://wa.me/${+"234"}${gh}?text=Hi%20I'm%20from%20Talent%20Base`;
   return (
     <>
       <div className=" flex flex-row justify-between items-start p-10">
